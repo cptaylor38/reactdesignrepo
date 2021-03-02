@@ -15,7 +15,7 @@ function App() {
           <Route path='/space' component={Space} />
           <Route path='/fashion' component={Fashion} />
           <Route path='/foaas' component={Foaas} />
-          <Route path='./clones' component={Clones} />
+          <Route path='/clones' component={Clones} />
           <Route path="*" component={Landing} />
         </Switch>
       </Router>
