@@ -1,0 +1,33 @@
+.spaceMain {
+  display: flex;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  main {
+    height: 100vh;
+    width: 100vw;
+    background: transparent;
+    z-index: 2;
+    font-size: 50vh;
+    font-weight: bolder;
+    background: black;
+    color: white;
+    line-height: 70vh;
+    position: absolute;
+    mix-blend-mode: multiply;
+  }
+  video {
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+  }
+}
+
+.spaceBody {
+  max-width: 100vw;
+  .navbar {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+  }
+}

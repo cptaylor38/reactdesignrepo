@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import {Container, Navbar, NavbarBrand, NavbarText} from 'reactstrap';
 import './Landing.scss';
 
@@ -16,7 +16,7 @@ const Landing = () => {
                 </nav>
             </Navbar>
             <Container>
-
+                <div>Landing text</div>
             </Container>
         </>
     )
