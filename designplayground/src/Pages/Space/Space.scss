@@ -11,7 +11,7 @@
     font-size: 50vh;
     font-weight: bolder;
     background: black;
-    color: white;
+    color: rgb(255, 255, 255);
     line-height: 70vh;
     position: absolute;
     mix-blend-mode: multiply;
@@ -25,9 +25,32 @@
 
 .spaceBody {
   max-width: 100vw;
+  position: relative;
   .navbar {
     display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 3;
     padding: 1rem;
     justify-content: space-between;
+    background: black;
+    color: rgb(28, 184, 223);
+    div {
+      display: flex;
+      justify-content: space-evenly;
+      flex: 1;
+    }
+  }
+}
+
+.spaceSub {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  section {
+    max-width: 60%;
+    margin: auto;
   }
 }
