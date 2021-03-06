@@ -26,8 +26,8 @@ const Fashion = () => {
                     <button className='fl__btn-m'>M</button>
                 </section>
                 <section className='fashion__landing__imgs__S'>
-                    <img src={fModel} className='fl__img' />
-                    <img src={mModel} className='fl__img' style={{height: '60vh', alignSelf: 'flex-end'}} />
+                    <img src={fModel} alt='female model img' className='fl__img' />
+                    <img src={mModel} alt='male model img' className='fl__img' style={{height: '60vh', alignSelf: 'flex-end'}} />
                 </section>
             </Container>
         </div>

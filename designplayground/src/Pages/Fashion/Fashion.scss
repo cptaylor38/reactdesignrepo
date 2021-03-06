@@ -5,16 +5,13 @@ $pageFont: Verdana, Geneva, Tahoma, sans-serif;
   display: flex;
   flex-direction: column;
   background: linear-gradient(
-    rgba(255, 185, 144, 0.219),
-    rgba(126, 218, 249, 0.158)
+    rgba(255, 185, 144, 0.753),
+    rgba(126, 218, 249, 0.705)
   );
   height: 100vh;
   font-family: $pageFont;
   button {
     font-family: $pageFont;
-    background: rgb(252, 252, 252);
-    border-radius: 150px;
-    border: 1px solid black;
   }
 }
 
@@ -22,6 +19,7 @@ $pageFont: Verdana, Geneva, Tahoma, sans-serif;
   display: flex;
   max-width: 100%;
   flex-direction: row;
+  background: rgba(243, 227, 227, 0.87);
   justify-content: space-between;
   padding: 2rem;
   .fashion__nav__brand {
@@ -31,6 +29,9 @@ $pageFont: Verdana, Geneva, Tahoma, sans-serif;
     width: 10vw;
     padding: 1rem 0;
     font-size: 1em;
+    background: rgb(252, 252, 252);
+    border-radius: 150px;
+    border: 1px solid grey;
   }
 }
 
@@ -39,7 +40,7 @@ $pageFont: Verdana, Geneva, Tahoma, sans-serif;
   display: flex;
   flex: 1;
   flex-direction: column;
-  background: linear-gradient(rgba(255, 255, 255, 0.11), rgba(0, 0, 0, 0.596));
+  background: linear-gradient(rgba(255, 255, 255, 0.562), rgba(0, 0, 0, 0.596));
   .fashion__landing__hero__S {
     width: 60vw;
     flex: 1;
@@ -62,10 +63,10 @@ $pageFont: Verdana, Geneva, Tahoma, sans-serif;
       border: none;
     }
     .fl__btn-f {
-      background: rgba(255, 255, 44, 0.315);
+      background: rgba(255, 255, 120, 0.404);
     }
     .fl__btn-m {
-      background: rgb(109, 109, 252);
+      background: rgba(109, 109, 252, 0.356);
     }
   }
   .fashion__landing__imgs__S {
