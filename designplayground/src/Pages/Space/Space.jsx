@@ -1,9 +1,16 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { Container } from 'reactstrap';
 import './Space.scss';
 import video from '../../Assets/Images/spacevid.mp4';
 
 const Space = () => {
+
+    useEffect(async ()=> {
+        const data = await fetch('https://frozen-citadel-68486.herokuapp.com/api/nasa/curiousity');
+        console.log(data);
+    }, [])
+
+
     return(
         <div className='spaceBody'>
             <nav className='navbar'>
