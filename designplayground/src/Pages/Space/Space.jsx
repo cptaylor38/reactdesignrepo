@@ -1,15 +1,24 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import { Container } from 'reactstrap';
 import './Space.scss';
 import video from '../../Assets/Images/spacevid.mp4';
 
 const Space = () => {
+    const [roverImages, setRoverImages] = useState([]);
+    
+    const getPhotos = async () => {
+        try {
+            const response = await fetch('https://frozen-citadel-68486.herokuapp.com/api/nasa/curiousity');
+            const data = await response.json();
+            console.log(data.photos);
+            setRoverImages(data.photos);
+        }
+        catch(err){
+            console.log(err);
+        }
+    }
 
-    useEffect(async ()=> {
-        const data = await fetch('https://frozen-citadel-68486.herokuapp.com/api/nasa/curiousity');
-        console.log(data);
-    }, [])
-
+    useEffect(() => getPhotos(), [])
 
     return(
         <div className='spaceBody'>
@@ -32,10 +41,9 @@ const Space = () => {
             <Container className='spaceSub'>
                 <h1>Some info text</h1>
                 <section>
-                    <article>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos aspernatur molestiae tempore necessitatibus nisi sed eius, error officia ipsam exercitationem saepe velit, autem, nobis quia sunt odio repellendus. Blanditiis, architecto!</article>
-                    <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos adipisci in temporibus eos tenetur numquam cum est, non fuga, qui architecto voluptas. Corporis magnam dignissimos soluta esse assumenda veritatis consectetur.</article>
-                    <article>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos aspernatur molestiae tempore necessitatibus nisi sed eius, error officia ipsam exercitationem saepe velit, autem, nobis quia sunt odio repellendus. Blanditiis, architecto!</article>
-                    <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos adipisci in temporibus eos tenetur numquam cum est, non fuga, qui architecto voluptas. Corporis magnam dignissimos soluta esse assumenda veritatis consectetur.</article> 
+                    <article className='rover__img__container'>{ roverImages ? 
+                    roverImages.map(image => <div className='rover__img__wrapper'><img className='rover__img' key={image.id} src={image.img_src} alt={`rover image from: ${image.earth_date}`}/></div>) : null  
+                    }</article> 
                 </section>
             </Container>
         </div>
