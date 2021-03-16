@@ -42,7 +42,7 @@ const Space = () => {
                 <h1>Some info text</h1>
                 <section>
                     <article className='rover__img__container'>{ roverImages ? 
-                    roverImages.map(image => <div className='rover__img__wrapper'><img className='rover__img' key={image.id} src={image.img_src} alt={`rover image from: ${image.earth_date}`}/></div>) : null  
+                    roverImages.map(image => <div className='rover__img__wrapper'><img className='rover__img' key={image.id} src={image.img_src} alt={`rover at: ${image.earth_date}`}/></div>) : null  
                     }</article> 
                 </section>
             </Container>

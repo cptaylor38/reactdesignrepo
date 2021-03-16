@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect} from 'react';
 import './Fashion.scss';
 import mModel from '../../Assets/Images/malemodel2nobg.png';
 import fModel from '../../Assets/Images/modelnobg.png'
