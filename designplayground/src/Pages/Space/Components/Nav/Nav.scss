@@ -1,0 +1,15 @@
+.stellar__navbar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  padding: 1rem;
+  justify-content: space-between;
+  background: black;
+  color: rgb(28, 184, 223);
+  div {
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+  }
+}
