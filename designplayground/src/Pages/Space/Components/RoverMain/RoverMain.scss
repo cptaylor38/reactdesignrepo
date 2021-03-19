@@ -1,0 +1,31 @@
+.spaceSub {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100vw;
+  section {
+    max-width: 100%;
+    margin: auto;
+    padding: 2rem;
+    .rover__img__container {
+      position: relative;
+      height: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+      gap: 10px;
+      grid-auto-flow: dense;
+      .rover__img__wrapper {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        .rover__img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}
