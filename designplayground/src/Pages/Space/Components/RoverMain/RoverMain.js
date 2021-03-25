@@ -6,6 +6,7 @@ const RoverMain = (props) => {
   const [roverImages, setRoverImages] = useState([]);
 
   const getPhotos = async () => {
+    console.log('getphotos');
     try {
       const response = await fetch(
         `https://frozen-citadel-68486.herokuapp.com/api/nasa/${props.match.params.name.toLowerCase()}`

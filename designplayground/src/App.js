@@ -5,6 +5,7 @@ import Fashion from './Pages/Fashion/Fashion';
 import Foaas from './Pages/Foaas/Foaas';
 import Space from './Pages/Space/Space';
 import Clones from './Pages/Clones/ClonesHome';
+import Wellzal from './Pages/Wellzal/Wellzal';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path='/space' component={Space} />
           <Route path='/fashion' component={Fashion} />
           <Route path='/foaas' component={Foaas} />
+          <Route path='/wellzal' component={Wellzal} />
           <Route path='/clones' component={Clones} />
           <Route path='*' component={Landing} />
         </Switch>
