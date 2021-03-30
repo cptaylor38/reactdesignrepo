@@ -6,9 +6,11 @@ const Landing = () => {
   return (
     <div className='wel_landing--top'>
       <Hero />
-      <div className='wel__lead'>
-        <h1>Ready to feel better?</h1>
-      </div>
+
+      {/* <div className='wel__hero_description'>
+        <h1>Wellzal</h1>
+        <h3>(Zycoscalatrine)</h3>
+      </div> */}
     </div>
   );
 };

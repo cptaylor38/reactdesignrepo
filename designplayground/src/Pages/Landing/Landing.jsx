@@ -6,7 +6,7 @@ import './Landing.scss';
 const Landing = () => {
   return (
     <>
-      <Navbar>
+      <div>
         <nav
           style={{
             display: 'flex',
@@ -31,7 +31,7 @@ const Landing = () => {
             <Link to='/clones'>Clones</Link>
           </NavbarText>
         </nav>
-      </Navbar>
+      </div>
       <Container>
         <div>Landing text</div>
       </Container>
