@@ -6,6 +6,8 @@
   width: 100vw;
   .wel__hero__image {
     object-fit: cover;
+    max-height: 100vh;
+    min-width: 100%;
   }
   .wel__hero_description {
     display: flex;
