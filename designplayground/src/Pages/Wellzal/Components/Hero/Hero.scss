@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed&display=swap');
+
+.wel__v__container {
+  display: flex;
+  background: #9efff9;
+  width: 100vw;
+  .wel__hero__image {
+    object-fit: cover;
+  }
+  .wel__hero_description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Asap Condensed', sans-serif;
+    background: rgb(255, 255, 172);
+    border: 5px solid black;
+    border-radius: 75%;
+    padding: 5em 0;
+    width: 40%;
+    margin: auto;
+    h1 {
+      font-size: 3em;
+    }
+  }
+}

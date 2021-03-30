@@ -1,17 +1,15 @@
 import React from 'react';
 import './Wellzal.scss';
+import { Route } from 'react-router-dom';
 import { Container } from 'reactstrap';
-import video from '../../Assets/Images/flowerfield.mp4';
+import Landing from './Pages/Landing/Landing';
+import Assistance from './Pages/Assistance/Assistance';
 
 const Wellzal = () => {
   return (
     <Container fluid className='wel__page__container'>
-      <video autoPlay className='wel__video'>
-        <source src={video} type='video/mp4'></source>
-      </video>
-      <div className='wel__lead'>
-        <h1>Ready to feel better?</h1>
-      </div>
+      <Route exact path='/wellzal' component={Landing} />
+      <Route path='wellzal/assistance' component={Assistance} />
     </Container>
   );
 };

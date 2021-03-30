@@ -1,23 +1,11 @@
 .wel__page__container {
   display: block;
   width: 100vw;
-  overflow: hidden;
-  position: relative;
-
-  .wel__video {
-    object-fit: cover;
-    max-width: 100%;
-    position: fixed;
-    left: 0;
-    z-index: -1;
-  }
 
   .wel__lead {
-    position: fixed;
     display: flex;
     width: 100%;
-    left: 0;
-    top: 0;
+    margin-top: 2rem;
     z-index: 2;
     h1 {
       font-size: 68px;
