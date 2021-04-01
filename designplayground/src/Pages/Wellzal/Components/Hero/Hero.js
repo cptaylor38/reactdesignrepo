@@ -12,7 +12,7 @@ const Hero = () => {
       t1.fromTo(
         heroImage.current,
         { maxHeight: '100vh' },
-        { maxHeight: '50vh', duration: 2, ease: Power4.easeInOut }
+        { maxHeight: '50vh', duration: 1, ease: Power4.easeInOut }
       );
       t1.fromTo(
         lead.current,

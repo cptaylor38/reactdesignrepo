@@ -29,22 +29,34 @@ const WelNavbar = () => {
       <Collapse isOpen={isOpen} navbar>
         <Nav className='mr-auto' navbar className='wel__nav--links'>
           <NavItem>
-            <NavLink className='wel__nav__link' to='#about'>
+            <NavLink tag={Link} className='wel__nav__link' to='#about'>
               About <span>Wellzal</span>
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink className='wel__nav__link' to='#targettreatments'>
+            <NavLink
+              tag={Link}
+              className='wel__nav__link'
+              to='#targettreatments'
+            >
               Target Treatments
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink className='wel__nav__link' to='/wellzal/assistance'>
+            <NavLink
+              tag={Link}
+              className='wel__nav__link'
+              to='/wellzal/assistance'
+            >
               Copay Assistance
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink className='wel__nav__link' to='/wellzal/medguide'>
+            <NavLink
+              tag={Link}
+              className='wel__nav__link'
+              to='/wellzal/medguide'
+            >
               Medication Guide
             </NavLink>
           </NavItem>
