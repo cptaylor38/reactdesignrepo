@@ -19,9 +19,6 @@ const Landing = () => {
             <Link to='/space'>Space</Link>
           </NavbarText>
           <NavbarText>
-            <Link to='/fashion'>Fashion</Link>
-          </NavbarText>
-          <NavbarText>
             <Link to='/foaas'>F'off</Link>
           </NavbarText>
           <NavbarText>
