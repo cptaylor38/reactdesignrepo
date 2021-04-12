@@ -31,9 +31,6 @@ const Hero = () => {
           className='wel__hero__image'
         />
       </div>
-      <div className='wel__lead' ref={lead}>
-        <h1>Ready to feel better?</h1>
-      </div>
     </>
   );
 };

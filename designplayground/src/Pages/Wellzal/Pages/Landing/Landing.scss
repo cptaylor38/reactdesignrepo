@@ -24,3 +24,51 @@
     font-size: 3em;
   }
 }
+
+.wel_landing_cont {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.wel_landing_safety {
+  padding: 2em;
+  background: rgb(255, 239, 210);
+  .wel_safety_warning {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 1em;
+    text-align: left;
+    font-size: 14px;
+    max-height: 50vh;
+    overflow-y: scroll;
+    font-weight: bolder;
+    background: white;
+    .wel_safety_warning_lead {
+      border: 1px solid black;
+      padding: 0.5em;
+    }
+    .wel_safety_lists {
+      max-height: 40vh;
+      p {
+        padding: 1em;
+        font-weight: normal;
+        h6 {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .wel_safety_warning {
+    overflow-y: hidden !important;
+  }
+  .wel_safety_warning_lead {
+    max-width: 30vw;
+  }
+  .wel_safety_lists {
+    flex: 1;
+    overflow-y: scroll;
+  }
+}
